@@ -18,7 +18,7 @@ jobs:
     - name: Install Playwright Browsers
       run: npx playwright install --with-deps
     - name: Run Playwright tests
-      run: npx playwright test
+      run: xvfb-run npx playwright test
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
@@ -41,7 +41,7 @@ jobs:
       - name: Run Playwright tests
         run: xvfb-run npx playwright test --grep @UI
       - uses: actions/upload-artifact@v4
-        if: always()
+        if: ${{ !cancelled() }}
         with:
           name: playwright-report-ui
           path: playwright-report/
@@ -62,7 +62,7 @@ jobs:
       - name: Run Playwright tests
         run: xvfb-run npx playwright test --grep @API
       - uses: actions/upload-artifact@v4
-        if: always()
+        if: ${{ !cancelled() }}
         with:
           name: playwright-report-api
           path: playwright-report/
