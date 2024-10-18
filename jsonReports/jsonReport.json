@@ -1,0 +1,882 @@
+{
+  "config": {
+    "configFile": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/playwright.config.ts",
+    "rootDir": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      },
+      {
+        "outputDir": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "webkit",
+        "name": "webkit",
+        "testDir": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.48.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "example.spec.ts",
+      "file": "example.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 1379,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-10-18T01:35:13.834Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/test-results/example-has-title-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/test-results/example-has-title-chromium/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-b06063a3e613764d08f8",
+          "file": "example.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "passed",
+                  "duration": 1536,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-10-18T01:35:13.824Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/test-results/example-get-started-link-chromium/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/test-results/example-get-started-link-chromium/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-274e97907a6e3638a22f",
+          "file": "example.spec.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "status": "passed",
+                  "duration": 1839,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-10-18T01:35:14.427Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/test-results/example-has-title-firefox/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/test-results/example-has-title-firefox/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-f53a5ad453cd33dc57d5",
+          "file": "example.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 6,
+                  "status": "passed",
+                  "duration": 2137,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-10-18T01:35:16.428Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/test-results/example-get-started-link-firefox/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/test-results/example-get-started-link-firefox/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-bfe080d6fe34297f494c",
+          "file": "example.spec.ts",
+          "line": 11,
+          "column": 5
+        },
+        {
+          "title": "has title",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "status": "passed",
+                  "duration": 1570,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-10-18T01:35:18.279Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/test-results/example-has-title-webkit/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/test-results/example-has-title-webkit/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-4a26ebd06a6b810edcc2",
+          "file": "example.spec.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "get started link",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 10,
+                  "status": "passed",
+                  "duration": 1739,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-10-18T01:35:18.440Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/test-results/example-get-started-link-webkit/test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/test-results/example-get-started-link-webkit/video.webm"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "a30a6eba6312f6b87ea5-1eb159041d56409ed83c",
+          "file": "example.spec.ts",
+          "line": 11,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "playwrightactions.spec.ts",
+      "file": "playwrightactions.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "UI - Login User",
+          "ok": true,
+          "tags": [
+            "ProjectName",
+            "Tests",
+            "LoginUser",
+            "UI",
+            "FrontendTest"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "status": "passed",
+                  "duration": 3345,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-10-18T01:35:13.836Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/test-results/playwrightactions-UI---Login-User-chromium/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f492fd28028a5a8d3ce-2eaa707d98e47e1acc17",
+          "file": "playwrightactions.spec.ts",
+          "line": 34,
+          "column": 5
+        },
+        {
+          "title": "Backend Test - Auth EP is up",
+          "ok": false,
+          "tags": [
+            "ProjectName",
+            "Tests",
+            "AuthUser",
+            "API",
+            "BackendTest"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "status": "failed",
+                  "duration": 12,
+                  "error": {
+                    "message": "TypeError: apiRequestContext.get: Invalid URL",
+                    "stack": "TypeError: apiRequestContext.get: Invalid URL\n    at /Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts:66:34",
+                    "location": {
+                      "file": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts",
+                      "column": 34,
+                      "line": 66
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 64 |\u001b[39m   tag\u001b[33m:\u001b[39m [\u001b[32m'@ProjectName'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@Tests'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@AuthUser'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@API'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@BackendTest'\u001b[39m] \n \u001b[90m 65 |\u001b[39m }\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ request }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 66 |\u001b[39m   \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(\u001b[32m`/auth/actuator/health`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 67 |\u001b[39m   \u001b[36mconst\u001b[39m body \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n \u001b[90m 68 |\u001b[39m\n \u001b[90m 69 |\u001b[39m   \u001b[90m// Assertion\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts",
+                        "column": 34,
+                        "line": 66
+                      },
+                      "message": "TypeError: apiRequestContext.get: Invalid URL\n\n\u001b[0m \u001b[90m 64 |\u001b[39m   tag\u001b[33m:\u001b[39m [\u001b[32m'@ProjectName'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@Tests'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@AuthUser'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@API'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@BackendTest'\u001b[39m] \n \u001b[90m 65 |\u001b[39m }\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ request }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 66 |\u001b[39m   \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(\u001b[32m`/auth/actuator/health`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 67 |\u001b[39m   \u001b[36mconst\u001b[39m body \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n \u001b[90m 68 |\u001b[39m\n \u001b[90m 69 |\u001b[39m   \u001b[90m// Assertion\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts:66:34\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-10-18T01:35:13.833Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts",
+                    "column": 34,
+                    "line": 66
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5f492fd28028a5a8d3ce-c7029cbbfefbc978be57",
+          "file": "playwrightactions.spec.ts",
+          "line": 63,
+          "column": 5
+        },
+        {
+          "title": "Backend Test - Auth Login",
+          "ok": false,
+          "tags": [
+            "ProjectName",
+            "Tests",
+            "AuthUser",
+            "Login",
+            "API",
+            "BackendTest"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "status": "failed",
+                  "duration": 7,
+                  "error": {
+                    "message": "TypeError: apiRequestContext.post: Invalid URL",
+                    "stack": "TypeError: apiRequestContext.post: Invalid URL\n    at /Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts:77:34",
+                    "location": {
+                      "file": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts",
+                      "column": 34,
+                      "line": 77
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 75 |\u001b[39m   tag\u001b[33m:\u001b[39m [\u001b[32m'@ProjectName'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@Tests'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@AuthUser'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@Login'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@API'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@BackendTest'\u001b[39m] \n \u001b[90m 76 |\u001b[39m }\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ request }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m   \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mpost(\u001b[32m\"/auth/login\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m     data\u001b[33m:\u001b[39m {\n \u001b[90m 79 |\u001b[39m       username\u001b[33m:\u001b[39m usernameData\u001b[33m,\u001b[39m\n \u001b[90m 80 |\u001b[39m       password\u001b[33m:\u001b[39m passwordData\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts",
+                        "column": 34,
+                        "line": 77
+                      },
+                      "message": "TypeError: apiRequestContext.post: Invalid URL\n\n\u001b[0m \u001b[90m 75 |\u001b[39m   tag\u001b[33m:\u001b[39m [\u001b[32m'@ProjectName'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@Tests'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@AuthUser'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@Login'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@API'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@BackendTest'\u001b[39m] \n \u001b[90m 76 |\u001b[39m }\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ request }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m   \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mpost(\u001b[32m\"/auth/login\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m     data\u001b[33m:\u001b[39m {\n \u001b[90m 79 |\u001b[39m       username\u001b[33m:\u001b[39m usernameData\u001b[33m,\u001b[39m\n \u001b[90m 80 |\u001b[39m       password\u001b[33m:\u001b[39m passwordData\u001b[0m\n\n\u001b[2m    at /Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts:77:34\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-10-18T01:35:14.100Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts",
+                    "column": 34,
+                    "line": 77
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5f492fd28028a5a8d3ce-205a6bfeb07b4500a5b8",
+          "file": "playwrightactions.spec.ts",
+          "line": 74,
+          "column": 5
+        },
+        {
+          "title": "UI - Login User",
+          "ok": true,
+          "tags": [
+            "ProjectName",
+            "Tests",
+            "LoginUser",
+            "UI",
+            "FrontendTest"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "status": "passed",
+                  "duration": 2265,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-10-18T01:35:16.573Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/test-results/playwrightactions-UI---Login-User-firefox/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f492fd28028a5a8d3ce-460b577b14c2ef86991d",
+          "file": "playwrightactions.spec.ts",
+          "line": 34,
+          "column": 5
+        },
+        {
+          "title": "Backend Test - Auth EP is up",
+          "ok": false,
+          "tags": [
+            "ProjectName",
+            "Tests",
+            "AuthUser",
+            "API",
+            "BackendTest"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 8,
+                  "status": "failed",
+                  "duration": 17,
+                  "error": {
+                    "message": "TypeError: apiRequestContext.get: Invalid URL",
+                    "stack": "TypeError: apiRequestContext.get: Invalid URL\n    at /Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts:66:34",
+                    "location": {
+                      "file": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts",
+                      "column": 34,
+                      "line": 66
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 64 |\u001b[39m   tag\u001b[33m:\u001b[39m [\u001b[32m'@ProjectName'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@Tests'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@AuthUser'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@API'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@BackendTest'\u001b[39m] \n \u001b[90m 65 |\u001b[39m }\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ request }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 66 |\u001b[39m   \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(\u001b[32m`/auth/actuator/health`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 67 |\u001b[39m   \u001b[36mconst\u001b[39m body \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n \u001b[90m 68 |\u001b[39m\n \u001b[90m 69 |\u001b[39m   \u001b[90m// Assertion\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts",
+                        "column": 34,
+                        "line": 66
+                      },
+                      "message": "TypeError: apiRequestContext.get: Invalid URL\n\n\u001b[0m \u001b[90m 64 |\u001b[39m   tag\u001b[33m:\u001b[39m [\u001b[32m'@ProjectName'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@Tests'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@AuthUser'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@API'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@BackendTest'\u001b[39m] \n \u001b[90m 65 |\u001b[39m }\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ request }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 66 |\u001b[39m   \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(\u001b[32m`/auth/actuator/health`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 67 |\u001b[39m   \u001b[36mconst\u001b[39m body \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n \u001b[90m 68 |\u001b[39m\n \u001b[90m 69 |\u001b[39m   \u001b[90m// Assertion\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts:66:34\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-10-18T01:35:17.644Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts",
+                    "column": 34,
+                    "line": 66
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5f492fd28028a5a8d3ce-f5eb0876e4b509dd3a6f",
+          "file": "playwrightactions.spec.ts",
+          "line": 63,
+          "column": 5
+        },
+        {
+          "title": "Backend Test - Auth Login",
+          "ok": false,
+          "tags": [
+            "ProjectName",
+            "Tests",
+            "AuthUser",
+            "Login",
+            "API",
+            "BackendTest"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 5,
+                  "status": "failed",
+                  "duration": 7,
+                  "error": {
+                    "message": "TypeError: apiRequestContext.post: Invalid URL",
+                    "stack": "TypeError: apiRequestContext.post: Invalid URL\n    at /Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts:77:34",
+                    "location": {
+                      "file": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts",
+                      "column": 34,
+                      "line": 77
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 75 |\u001b[39m   tag\u001b[33m:\u001b[39m [\u001b[32m'@ProjectName'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@Tests'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@AuthUser'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@Login'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@API'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@BackendTest'\u001b[39m] \n \u001b[90m 76 |\u001b[39m }\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ request }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m   \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mpost(\u001b[32m\"/auth/login\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m     data\u001b[33m:\u001b[39m {\n \u001b[90m 79 |\u001b[39m       username\u001b[33m:\u001b[39m usernameData\u001b[33m,\u001b[39m\n \u001b[90m 80 |\u001b[39m       password\u001b[33m:\u001b[39m passwordData\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts",
+                        "column": 34,
+                        "line": 77
+                      },
+                      "message": "TypeError: apiRequestContext.post: Invalid URL\n\n\u001b[0m \u001b[90m 75 |\u001b[39m   tag\u001b[33m:\u001b[39m [\u001b[32m'@ProjectName'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@Tests'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@AuthUser'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@Login'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@API'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@BackendTest'\u001b[39m] \n \u001b[90m 76 |\u001b[39m }\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ request }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m   \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mpost(\u001b[32m\"/auth/login\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m     data\u001b[33m:\u001b[39m {\n \u001b[90m 79 |\u001b[39m       username\u001b[33m:\u001b[39m usernameData\u001b[33m,\u001b[39m\n \u001b[90m 80 |\u001b[39m       password\u001b[33m:\u001b[39m passwordData\u001b[0m\n\n\u001b[2m    at /Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts:77:34\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-10-18T01:35:17.409Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts",
+                    "column": 34,
+                    "line": 77
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5f492fd28028a5a8d3ce-363831729d1b8f8de788",
+          "file": "playwrightactions.spec.ts",
+          "line": 74,
+          "column": 5
+        },
+        {
+          "title": "UI - Login User",
+          "ok": true,
+          "tags": [
+            "ProjectName",
+            "Tests",
+            "LoginUser",
+            "UI",
+            "FrontendTest"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 11,
+                  "status": "passed",
+                  "duration": 1912,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-10-18T01:35:19.431Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/test-results/playwrightactions-UI---Login-User-webkit/test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5f492fd28028a5a8d3ce-6f64a9d0a8d93625045e",
+          "file": "playwrightactions.spec.ts",
+          "line": 34,
+          "column": 5
+        },
+        {
+          "title": "Backend Test - Auth EP is up",
+          "ok": false,
+          "tags": [
+            "ProjectName",
+            "Tests",
+            "AuthUser",
+            "API",
+            "BackendTest"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "status": "failed",
+                  "duration": 24,
+                  "error": {
+                    "message": "TypeError: apiRequestContext.get: Invalid URL",
+                    "stack": "TypeError: apiRequestContext.get: Invalid URL\n    at /Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts:66:34",
+                    "location": {
+                      "file": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts",
+                      "column": 34,
+                      "line": 66
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 64 |\u001b[39m   tag\u001b[33m:\u001b[39m [\u001b[32m'@ProjectName'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@Tests'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@AuthUser'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@API'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@BackendTest'\u001b[39m] \n \u001b[90m 65 |\u001b[39m }\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ request }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 66 |\u001b[39m   \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(\u001b[32m`/auth/actuator/health`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 67 |\u001b[39m   \u001b[36mconst\u001b[39m body \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n \u001b[90m 68 |\u001b[39m\n \u001b[90m 69 |\u001b[39m   \u001b[90m// Assertion\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts",
+                        "column": 34,
+                        "line": 66
+                      },
+                      "message": "TypeError: apiRequestContext.get: Invalid URL\n\n\u001b[0m \u001b[90m 64 |\u001b[39m   tag\u001b[33m:\u001b[39m [\u001b[32m'@ProjectName'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@Tests'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@AuthUser'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@API'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@BackendTest'\u001b[39m] \n \u001b[90m 65 |\u001b[39m }\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ request }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 66 |\u001b[39m   \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(\u001b[32m`/auth/actuator/health`\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 67 |\u001b[39m   \u001b[36mconst\u001b[39m body \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m response\u001b[33m.\u001b[39mjson()\u001b[33m;\u001b[39m\n \u001b[90m 68 |\u001b[39m\n \u001b[90m 69 |\u001b[39m   \u001b[90m// Assertion\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts:66:34\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-10-18T01:35:20.343Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts",
+                    "column": 34,
+                    "line": 66
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5f492fd28028a5a8d3ce-d9330c0cacad696a31a5",
+          "file": "playwrightactions.spec.ts",
+          "line": 63,
+          "column": 5
+        },
+        {
+          "title": "Backend Test - Auth Login",
+          "ok": false,
+          "tags": [
+            "ProjectName",
+            "Tests",
+            "AuthUser",
+            "Login",
+            "API",
+            "BackendTest"
+          ],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "webkit",
+              "projectName": "webkit",
+              "results": [
+                {
+                  "workerIndex": 9,
+                  "status": "failed",
+                  "duration": 23,
+                  "error": {
+                    "message": "TypeError: apiRequestContext.post: Invalid URL",
+                    "stack": "TypeError: apiRequestContext.post: Invalid URL\n    at /Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts:77:34",
+                    "location": {
+                      "file": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts",
+                      "column": 34,
+                      "line": 77
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 75 |\u001b[39m   tag\u001b[33m:\u001b[39m [\u001b[32m'@ProjectName'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@Tests'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@AuthUser'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@Login'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@API'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@BackendTest'\u001b[39m] \n \u001b[90m 76 |\u001b[39m }\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ request }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m   \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mpost(\u001b[32m\"/auth/login\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m     data\u001b[33m:\u001b[39m {\n \u001b[90m 79 |\u001b[39m       username\u001b[33m:\u001b[39m usernameData\u001b[33m,\u001b[39m\n \u001b[90m 80 |\u001b[39m       password\u001b[33m:\u001b[39m passwordData\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts",
+                        "column": 34,
+                        "line": 77
+                      },
+                      "message": "TypeError: apiRequestContext.post: Invalid URL\n\n\u001b[0m \u001b[90m 75 |\u001b[39m   tag\u001b[33m:\u001b[39m [\u001b[32m'@ProjectName'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@Tests'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@AuthUser'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@Login'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@API'\u001b[39m\u001b[33m,\u001b[39m \u001b[32m'@BackendTest'\u001b[39m] \n \u001b[90m 76 |\u001b[39m }\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ request }) \u001b[33m=>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m   \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39mpost(\u001b[32m\"/auth/login\"\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m     data\u001b[33m:\u001b[39m {\n \u001b[90m 79 |\u001b[39m       username\u001b[33m:\u001b[39m usernameData\u001b[33m,\u001b[39m\n \u001b[90m 80 |\u001b[39m       password\u001b[33m:\u001b[39m passwordData\u001b[0m\n\n\u001b[2m    at /Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts:77:34\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2024-10-18T01:35:20.306Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "/Users/allanmacdonald/dev/cgs/cgs-github-actions-demo/e2e/playwrightactions.spec.ts",
+                    "column": 34,
+                    "line": 77
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5f492fd28028a5a8d3ce-df79e25a8c190a234d8a",
+          "file": "playwrightactions.spec.ts",
+          "line": 74,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2024-10-18T01:35:13.527Z",
+    "duration": 7832.846,
+    "expected": 9,
+    "skipped": 0,
+    "unexpected": 6,
+    "flaky": 0
+  }
+}
