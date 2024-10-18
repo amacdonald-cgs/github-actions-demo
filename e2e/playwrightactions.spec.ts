@@ -1,4 +1,4 @@
-import { test, expect, chromium, firefox } from '@playwright/test';
+import { test, expect, chromium, firefox, request } from '@playwright/test';
 
 const usernameData = "amacdonald@cgsinc.ca";
 const passwordData = "password01";
@@ -61,7 +61,37 @@ test('UI - Login User', {
   // await context.close();
   // await browser.close();
 });
+test('API Call using Playwright', async ({}) => {
+  const apiContext = await request.newContext({
+    ignoreHTTPSErrors: true,  // Ignore SSL errors
+  });
+  
+  const response = await apiContext.post('https://rehearsed-dev.teamworkar.com/api/v1/scenarios/3cb585fa-4920-417e-b8ea-7d7b1bfe7d67/conversation-kickoff', {
+    headers: {
+      'accept': 'application/json, text/plain, */*',
+      'accept-language': 'en-US,en;q=0.9',
+      'content-type': 'application/json',
+      'sec-ch-ua': '"Google Chrome";v="129", "Not=A?Brand";v="8", "Chromium";v="129"',
+      'sec-ch-ua-mobile': '?0',
+      'sec-ch-ua-platform': '"Windows"',
+      'sec-fetch-dest': 'empty',
+      'sec-fetch-mode': 'cors',
+      'sec-fetch-site': 'same-origin',
+    },
+    data: JSON.stringify({
+      convoId: '939a296d-7e4b-4339-9286-b681f7d0260a',
+      personalityId: 'b47b8779-bc93-4ed7-b55c-54fda4dcc1f5',
+    }),
+    // referrer: 'https://localhost/scenario-roleplay/09966379-e64d-49bc-9bf8-51f983587f8f',
+    // referrerPolicy: 'strict-origin-when-cross-origin',
+    // credentials: 'include'
+  });
+  console.log(response); // Print the response ok
+  // expect(response.ok()).toBeTruthy(); // Validate the response is successful
+  const responseBody = await response.json(); // Parse the response JSON
 
+  console.log(responseBody); // Print the response body
+});
 // test('Backend Test - Auth EP is up', { 
 //   tag: ['@ProjectName', '@Tests', '@AuthUser', '@API', '@BackendTest'] 
 // }, async ({ request }) => {
