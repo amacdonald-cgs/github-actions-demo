@@ -3,6 +3,8 @@ import { checkServices } from '../test-helpers/healthChecks';
 
 test('Check API services', { tag: '@health' }, async () => {
   const apiKey = process.env.HEYGEN_API_KEY;
+  console.log('HEYGEN_API_KEY length:', process.env.HEYGEN_API_KEY?.length || 'not set');
+
   expect(apiKey).toBeDefined();
   const heyGenCriticalThreshold: string = process.env.HEYGEN_CRITICAL_THRESHOLD || '9000';
   const heyGenWarningThreshold: string = process.env.HEYGEN_WARNING_THRESHOLD || '20000';
