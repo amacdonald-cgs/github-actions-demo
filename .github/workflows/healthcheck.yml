@@ -11,10 +11,10 @@ jobs:
 
     steps:
     - name: Checkout code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: Set up Node.js
-      uses: actions/setup-node@v2
+      uses: actions/setup-node@v3
       with:
         node-version: 14
 
@@ -22,7 +22,7 @@ jobs:
       run: npm install
 
     - name: Run health checks
-      run: npx playwright test --grep '@health'
+      run: npx playwright test --grep '@health' --project=chromium
       env:
         HEYGEN_API_KEY: ${{ secrets.HEYGEN_API_KEY }}
         HEYGEN_CRITICAL_THRESHOLD: ${{ secrets.HEYGEN_CRITICAL_THRESHOLD }}
