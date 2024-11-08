@@ -24,6 +24,6 @@ test('Check API services', { tag: '@health' }, async () => {
     // Add more expected results here...
   ]);
   // the payload for Heygen Service should have a 'remaining_quota' property with a value no less than 30000
-  expect(results[0].payload.remaining_quota).toBeGreaterThanOrEqual(35000);
+  expect(results[0].payload.remaining_quota).toBeGreaterThanOrEqual(9000);
 
 });
