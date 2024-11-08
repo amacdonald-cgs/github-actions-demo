@@ -111,19 +111,19 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 656,
+                  "duration": 641,
                   "errors": [],
                   "stdout": [
                     {
                       "text": "no errors for Heygen Service\n"
                     },
                     {
-                      "text": "results: [{\"name\":\"Heygen Service\",\"healthy\":true,\"payload\":{\"remaining_quota\":31677,\"details\":{\"api\":31677,\"streaming_avatar\":-31,\"streaming_avatar_instance_quota\":2}}}]\n"
+                      "text": "results: [{\"name\":\"Heygen Service\",\"healthy\":true,\"payload\":{\"remaining_quota\":31437,\"details\":{\"api\":31437,\"streaming_avatar\":-31,\"streaming_avatar_instance_quota\":2}}}]\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-11-08T17:12:09.896Z",
+                  "startTime": "2024-11-08T17:55:13.456Z",
                   "attachments": []
                 }
               ],
@@ -140,8 +140,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-11-08T17:12:09.637Z",
-    "duration": 934.919,
+    "startTime": "2024-11-08T17:55:13.128Z",
+    "duration": 985.872,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

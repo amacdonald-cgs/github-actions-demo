@@ -25,3 +25,5 @@ jobs:
       run: npx playwright test --grep '@health'
       env:
         HEYGEN_API_KEY: ${{ secrets.HEYGEN_API_KEY }}
+        HEYGEN_CRITICAL_THRESHOLD: ${{ secrets.HEYGEN_CRITICAL_THRESHOLD }}
+        HEYGEN_WARNING_THRESHOLD: ${{ secrets.HEYGEN_WARNING_THRESHOLD }}
