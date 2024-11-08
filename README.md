@@ -1,3 +1,6 @@
+[![Health Checks](https://github.com/amacdonald-cgs/github-actions-demo/actions/workflows/healthcheck.yml/badge.svg)](https://github.com/amacdonald-cgs/github-actions-demo/actions/workflows/healthcheck.yml)
+
+
 # Overview
 Simple Node.js application to demonstrate the use of GitHub Actions
 
