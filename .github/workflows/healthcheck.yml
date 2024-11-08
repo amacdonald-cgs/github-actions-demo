@@ -22,6 +22,6 @@ jobs:
       run: npm install
 
     - name: Run health checks
-      run: npx playwright test --grep '@healthcheck'
+      run: npx playwright test --grep '@health'
       env:
         HEYGEN_API_KEY: ${{ secrets.HEYGEN_API_KEY }}
