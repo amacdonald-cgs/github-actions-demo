@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "/home/iggymacd/dev/TeamworkAR/working/demo/cgs-github-actions-demo/playwright.config.ts",
-    "rootDir": "/home/iggymacd/dev/TeamworkAR/working/demo/cgs-github-actions-demo/e2e",
+    "configFile": "/home/iggymacd/dev/TeamworkAR/working/Rehearsed.ai/github-actions-demo/playwright.config.ts",
+    "rootDir": "/home/iggymacd/dev/TeamworkAR/working/Rehearsed.ai/github-actions-demo/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 6
+      "actualWorkers": 1
     },
     "preserveOutput": "always",
     "reporter": [
@@ -39,13 +39,13 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "/home/iggymacd/dev/TeamworkAR/working/demo/cgs-github-actions-demo/test-results",
+        "outputDir": "/home/iggymacd/dev/TeamworkAR/working/Rehearsed.ai/github-actions-demo/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "chromium",
         "name": "chromium",
-        "testDir": "/home/iggymacd/dev/TeamworkAR/working/demo/cgs-github-actions-demo/e2e",
+        "testDir": "/home/iggymacd/dev/TeamworkAR/working/Rehearsed.ai/github-actions-demo/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -53,13 +53,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "/home/iggymacd/dev/TeamworkAR/working/demo/cgs-github-actions-demo/test-results",
+        "outputDir": "/home/iggymacd/dev/TeamworkAR/working/Rehearsed.ai/github-actions-demo/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "firefox",
         "name": "firefox",
-        "testDir": "/home/iggymacd/dev/TeamworkAR/working/demo/cgs-github-actions-demo/e2e",
+        "testDir": "/home/iggymacd/dev/TeamworkAR/working/Rehearsed.ai/github-actions-demo/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -67,13 +67,13 @@
         "timeout": 30000
       },
       {
-        "outputDir": "/home/iggymacd/dev/TeamworkAR/working/demo/cgs-github-actions-demo/test-results",
+        "outputDir": "/home/iggymacd/dev/TeamworkAR/working/Rehearsed.ai/github-actions-demo/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "webkit",
         "name": "webkit",
-        "testDir": "/home/iggymacd/dev/TeamworkAR/working/demo/cgs-github-actions-demo/e2e",
+        "testDir": "/home/iggymacd/dev/TeamworkAR/working/Rehearsed.ai/github-actions-demo/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -89,20 +89,16 @@
   },
   "suites": [
     {
-      "title": "playwrightactions.spec.ts",
-      "file": "playwrightactions.spec.ts",
+      "title": "health_checks.spec.ts",
+      "file": "health_checks.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "UI - Login User",
+          "title": "Check API services",
           "ok": true,
           "tags": [
-            "ProjectName",
-            "Tests",
-            "LoginUser",
-            "UI",
-            "FrontendTest"
+            "health"
           ],
           "tests": [
             {
@@ -115,244 +111,28 @@
                 {
                   "workerIndex": 0,
                   "status": "passed",
-                  "duration": 10588,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-10-18T16:15:53.088Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/iggymacd/dev/TeamworkAR/working/demo/cgs-github-actions-demo/test-results/playwrightactions-UI---Login-User-chromium/test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/home/iggymacd/dev/TeamworkAR/working/demo/cgs-github-actions-demo/test-results/playwrightactions-UI---Login-User-chromium/video.webm"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "5f492fd28028a5a8d3ce-2eaa707d98e47e1acc17",
-          "file": "playwrightactions.spec.ts",
-          "line": 34,
-          "column": 5
-        },
-        {
-          "title": "API Call using Playwright",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
-                {
-                  "workerIndex": 1,
-                  "status": "passed",
-                  "duration": 492,
+                  "duration": 656,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "APIResponse: 404 Not Found\n  Date: Fri, 18 Oct 2024 16:20:32 GMT\n  Content-Type: application/json; charset=utf-8\n  Content-Length: 23\n  Connection: keep-alive\n  X-Powered-By: Express\n  ETag: W/\"17-SuRA/yvUWUo8rK6x7dKURLeBo+0\"\n"
+                      "text": "no errors for Heygen Service\n"
                     },
                     {
-                      "text": "{ message: \u001b[32m'Not Found'\u001b[39m }\n"
+                      "text": "results: [{\"name\":\"Heygen Service\",\"healthy\":true,\"payload\":{\"remaining_quota\":31677,\"details\":{\"api\":31677,\"streaming_avatar\":-31,\"streaming_avatar_instance_quota\":2}}}]\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-10-18T16:15:53.110Z",
+                  "startTime": "2024-11-08T17:12:09.896Z",
                   "attachments": []
                 }
               ],
               "status": "expected"
             }
           ],
-          "id": "5f492fd28028a5a8d3ce-cecd9b68ae8d7f6a6993",
-          "file": "playwrightactions.spec.ts",
-          "line": 64,
-          "column": 5
-        },
-        {
-          "title": "UI - Login User",
-          "ok": true,
-          "tags": [
-            "ProjectName",
-            "Tests",
-            "LoginUser",
-            "UI",
-            "FrontendTest"
-          ],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 2,
-                  "status": "passed",
-                  "duration": 7002,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-10-18T16:15:53.090Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "/home/iggymacd/dev/TeamworkAR/working/demo/cgs-github-actions-demo/test-results/playwrightactions-UI---Login-User-firefox/test-finished-1.png"
-                    },
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "/home/iggymacd/dev/TeamworkAR/working/demo/cgs-github-actions-demo/test-results/playwrightactions-UI---Login-User-firefox/video.webm"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "5f492fd28028a5a8d3ce-460b577b14c2ef86991d",
-          "file": "playwrightactions.spec.ts",
-          "line": 34,
-          "column": 5
-        },
-        {
-          "title": "API Call using Playwright",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 3,
-                  "status": "passed",
-                  "duration": 466,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "APIResponse: 404 Not Found\n  Date: Fri, 18 Oct 2024 16:20:32 GMT\n  Content-Type: application/json; charset=utf-8\n  Content-Length: 23\n  Connection: keep-alive\n  X-Powered-By: Express\n  ETag: W/\"17-SuRA/yvUWUo8rK6x7dKURLeBo+0\"\n"
-                    },
-                    {
-                      "text": "{ message: \u001b[32m'Not Found'\u001b[39m }\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-10-18T16:15:53.137Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "5f492fd28028a5a8d3ce-7ddeb2262cc427b54edc",
-          "file": "playwrightactions.spec.ts",
-          "line": 64,
-          "column": 5
-        },
-        {
-          "title": "UI - Login User",
-          "ok": false,
-          "tags": [
-            "ProjectName",
-            "Tests",
-            "LoginUser",
-            "UI",
-            "FrontendTest"
-          ],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 4,
-                  "status": "failed",
-                  "duration": 10,
-                  "error": {
-                    "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libxslt.so.1                                     ║\n║     libwoff2dec.so.1.0.2                             ║\n║     libvpx.so.7                                      ║\n║     libevent-2.1.so.7                                ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libwebpdemux.so.2                                ║\n║     libharfbuzz-icu.so.0                             ║\n║     libhyphen.so.0                                   ║\n║     libmanette-0.2.so.0                              ║\n║     libflite.so.1                                    ║\n║     libflite_usenglish.so.1                          ║\n║     libflite_cmu_grapheme_lang.so.1                  ║\n║     libflite_cmu_grapheme_lex.so.1                   ║\n║     libflite_cmu_indic_lang.so.1                     ║\n║     libflite_cmu_indic_lex.so.1                      ║\n║     libflite_cmulex.so.1                             ║\n║     libflite_cmu_time_awb.so.1                       ║\n║     libflite_cmu_us_awb.so.1                         ║\n║     libflite_cmu_us_kal16.so.1                       ║\n║     libflite_cmu_us_kal.so.1                         ║\n║     libflite_cmu_us_rms.so.1                         ║\n║     libflite_cmu_us_slt.so.1                         ║\n║     libGLESv2.so.2                                   ║\n║     libx264.so                                       ║\n╚══════════════════════════════════════════════════════╝",
-                    "stack": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libxslt.so.1                                     ║\n║     libwoff2dec.so.1.0.2                             ║\n║     libvpx.so.7                                      ║\n║     libevent-2.1.so.7                                ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libwebpdemux.so.2                                ║\n║     libharfbuzz-icu.so.0                             ║\n║     libhyphen.so.0                                   ║\n║     libmanette-0.2.so.0                              ║\n║     libflite.so.1                                    ║\n║     libflite_usenglish.so.1                          ║\n║     libflite_cmu_grapheme_lang.so.1                  ║\n║     libflite_cmu_grapheme_lex.so.1                   ║\n║     libflite_cmu_indic_lang.so.1                     ║\n║     libflite_cmu_indic_lex.so.1                      ║\n║     libflite_cmulex.so.1                             ║\n║     libflite_cmu_time_awb.so.1                       ║\n║     libflite_cmu_us_awb.so.1                         ║\n║     libflite_cmu_us_kal16.so.1                       ║\n║     libflite_cmu_us_kal.so.1                         ║\n║     libflite_cmu_us_rms.so.1                         ║\n║     libflite_cmu_us_slt.so.1                         ║\n║     libGLESv2.so.2                                   ║\n║     libx264.so                                       ║\n╚══════════════════════════════════════════════════════╝"
-                  },
-                  "errors": [
-                    {
-                      "message": "Error: browserType.launch: \n╔══════════════════════════════════════════════════════╗\n║ Host system is missing dependencies to run browsers. ║\n║ Missing libraries:                                   ║\n║     libxslt.so.1                                     ║\n║     libwoff2dec.so.1.0.2                             ║\n║     libvpx.so.7                                      ║\n║     libevent-2.1.so.7                                ║\n║     libgstgl-1.0.so.0                                ║\n║     libgstcodecparsers-1.0.so.0                      ║\n║     libwebpdemux.so.2                                ║\n║     libharfbuzz-icu.so.0                             ║\n║     libhyphen.so.0                                   ║\n║     libmanette-0.2.so.0                              ║\n║     libflite.so.1                                    ║\n║     libflite_usenglish.so.1                          ║\n║     libflite_cmu_grapheme_lang.so.1                  ║\n║     libflite_cmu_grapheme_lex.so.1                   ║\n║     libflite_cmu_indic_lang.so.1                     ║\n║     libflite_cmu_indic_lex.so.1                      ║\n║     libflite_cmulex.so.1                             ║\n║     libflite_cmu_time_awb.so.1                       ║\n║     libflite_cmu_us_awb.so.1                         ║\n║     libflite_cmu_us_kal16.so.1                       ║\n║     libflite_cmu_us_kal.so.1                         ║\n║     libflite_cmu_us_rms.so.1                         ║\n║     libflite_cmu_us_slt.so.1                         ║\n║     libGLESv2.so.2                                   ║\n║     libx264.so                                       ║\n╚══════════════════════════════════════════════════════╝"
-                    }
-                  ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-10-18T16:15:53.120Z",
-                  "attachments": []
-                }
-              ],
-              "status": "unexpected"
-            }
-          ],
-          "id": "5f492fd28028a5a8d3ce-6f64a9d0a8d93625045e",
-          "file": "playwrightactions.spec.ts",
-          "line": 34,
-          "column": 5
-        },
-        {
-          "title": "API Call using Playwright",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 5,
-                  "status": "passed",
-                  "duration": 493,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "APIResponse: 404 Not Found\n  Date: Fri, 18 Oct 2024 16:20:32 GMT\n  Content-Type: application/json; charset=utf-8\n  Content-Length: 23\n  Connection: keep-alive\n  X-Powered-By: Express\n  ETag: W/\"17-SuRA/yvUWUo8rK6x7dKURLeBo+0\"\n"
-                    },
-                    {
-                      "text": "{ message: \u001b[32m'Not Found'\u001b[39m }\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2024-10-18T16:15:53.102Z",
-                  "attachments": []
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "5f492fd28028a5a8d3ce-ac602dfc122f8c5e06f8",
-          "file": "playwrightactions.spec.ts",
-          "line": 64,
+          "id": "78e47cc99522de132e08-896f006667363b50aaf9",
+          "file": "health_checks.spec.ts",
+          "line": 4,
           "column": 5
         }
       ]
@@ -360,11 +140,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-10-18T16:15:52.709Z",
-    "duration": 11418.702,
-    "expected": 5,
+    "startTime": "2024-11-08T17:12:09.637Z",
+    "duration": 934.919,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
