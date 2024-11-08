@@ -6,6 +6,9 @@ test('Check API services', { tag: '@health' }, async () => {
   expect(apiKey).toBeDefined();
   const heyGenCriticalThreshold: string = process.env.HEYGEN_CRITICAL_THRESHOLD || '9000';
   const heyGenWarningThreshold: string = process.env.HEYGEN_WARNING_THRESHOLD || '20000';
+  console.log(`heyGenCriticalThreshold: ${heyGenCriticalThreshold}`);
+  console.log(`heyGenWarningThreshold: ${heyGenWarningThreshold}`);
+  console.log(`apiKey: ${apiKey}`);
 
 
   const services = [
